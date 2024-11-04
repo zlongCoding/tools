@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/day.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div id="datetime"></div>
+        <!-- <div>
+            <h4>今日代办: </h4>
+        </div> -->
+    </div>
+    <script>
+      function updateDateTime() {
+        const now = dayjs();
+        const formattedDate = now.format("YYYY-MM-DD HH:mm:ss");
+        const datetimeElement = document.getElementById("datetime");
+        datetimeElement.innerText = `时间：${formattedDate}`;
+      }
+      updateDateTime();
+      // 每秒更新一次
+      setInterval(updateDateTime, 1000);
+    </script>
+  </body>
+</html>

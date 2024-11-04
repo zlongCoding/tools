@@ -1,0 +1,19 @@
+{
+    "name": "日常工具集",
+    "version": "0.0.1",
+    "pluginName": "日常工具集",
+    "description": "快捷工具插件",
+    "main": "index.html",
+    "logo": "logo.png",
+    "preload": "preload.js",
+    "features": [
+      {
+        "code": "日常工具集",
+        "explain": "日常工具集",
+        "cmds": [
+          "日常工具集",
+          "richang"
+        ]
+      }
+    ]
+  }
